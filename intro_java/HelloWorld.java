@@ -1,24 +1,168 @@
-//nove
+//catorze
+import java.util.Scanner;
+
 public class HelloWorld{
     public static void main (String[]args){
 
-        double valor = 10;
-        valor += 10;
+    Scanner scan = new Scanner (System.in);
 
-        System.out.println(valor); //20
+    System.out.println("Digite seu sexo: 1(M) OU 2(F)");
 
-        valor -= 15;
-        System.out.println(valor); //5
+    int inputSexo = scan.nextInt();
+    String sexo;
 
-        valor *= 2;
-        System.out.println(valor); //10
+    switch (inputSexo){
+        case 1 : {
+            sexo = "Machu";
+        break; }
+        case 2 : {
+            sexo = "Female";
+        break; }
 
-        valor /= 10;
-        System.out.println(valor); //1
+        default : sexo = "Others";
 
+    }
 
+    System.out.println("Seu sexo é " + sexo);
+
+    }
 }
-}
+
+//treze
+// import java.util.Scanner;
+
+// public class HelloWorld{
+//     public static void main (String[]args){
+
+//     Scanner scan = new Scanner (System.in);
+
+//     System.out.println("Digite seu sexo: 1(M) OU 2(F)");
+
+//     String sexo = (scan.nextInt() == 1 ? "Masculino" : "Female"); //operador ternario (condição -> caso 1 -> caso 2)
+    
+//     System.out.println("Sexo escolhido é " + sexo);
+
+
+//     }
+// }
+
+//doze
+// import java.util.Scanner;
+
+// public class HelloWorld{
+//     public static void main (String[]args){
+
+        
+//     Scanner scan = new Scanner (System.in);
+//     System.out.println("Digite seu sexo: 1(M) OU 2(F)");
+
+
+//     int inputSexo = scan.nextInt();
+//     String sexo;
+
+//     if (inputSexo == 1){
+//         System.out.println("Masculino");
+//     }
+//     else{
+//         System.out.println("Feminino");
+//     }
+
+//     }
+// }
+
+//onze
+// import java.util.Scanner;
+
+// public class HelloWorld{
+//     public static void main (String[]args){
+        
+//     Scanner scan = new Scanner (System.in);
+
+//     System.out.println("Digite seu nome:");
+//     String nome = scan.nextLine();
+
+//     System.out.println("Olá " + nome + ", digite a sua nota da N1: ");
+//     double n1 = scan.nextDouble();
+//     System.out.println("da N2: ");
+//     double n2 = scan.nextDouble();
+//     System.out.println("da N3: ");
+//     double n3 = scan.nextDouble();
+
+//     double media = (n1+n2+n3)/3;
+
+//     System.out.println(nome + ", sua média é: " + media);
+
+
+
+//     if (media == 7) {} //igual  
+//     if (media >= 7) {} //maiorigual
+//     if (media <= 7) {} //menorigual
+//     if (media < 7) {} //menor
+//     if (media > 7) {} //maior 
+//     if (media != 7) {} //diferente
+
+//     if (media >= 7 ){
+//         System.out.println("Aprovado")
+//     }
+//     else{
+//         if (media < 5){ 
+//         System.out.println("Reprovado")
+//         }
+//         else {
+//             double exame = 10-media
+//             System.out.println("Exame, você precisa tirar" + exame)
+//         }
+//     }
+// }
+
+
+//dez
+//bibilioteca de scanner 
+// import java.util.Scanner;
+
+// public class HelloWorld{
+//     public static void main (String[]args){
+        
+//     Scanner scan = new Scanner (System.in);
+
+//     System.out.println("Digite seu nome:");
+//     String nome = scan.nextLine();
+
+//     System.out.println("Olá " + nome + ", digite a sua nota da N1: ");
+//     double n1 = scan.nextDouble();
+//     System.out.println("da N2: ");
+//     double n2 = scan.nextDouble();
+//     System.out.println("da N3: ");
+//     double n3 = scan.nextDouble();
+
+//     double res = (n1+n2+n3)/3;
+
+//     System.out.println(nome + ", sua média é: " + res);
+
+// }
+// }
+
+//nove
+// public class HelloWorld{
+//     public static void main (String[]args){
+
+//         double valor = 10;
+//         valor += 10;
+
+//         System.out.println(valor); //20
+
+//         valor -= 15;
+//         System.out.println(valor); //5
+
+//         valor *= 2;
+//         System.out.println(valor); //10
+
+//         valor /= 10;
+//         System.out.println(valor); //1
+
+
+// }
+// }
 
 
 //oito 
@@ -158,3 +302,8 @@ public class HelloWorld{
 //javac (nome do arquivo.java)
 //depois ->
 //java (nome do arquivo só)
+
+
+// pra saber em qual parte da pasta está programando é comando "ls" no terminal 
+// pra entrar na pasta, colocar "cd" e usar TAB pra ir pro próximo diretório
+//exemplo PS C:\Users\ALUNO.LAB-15\Desktop\intro.java-main> cd .\intro_java\
